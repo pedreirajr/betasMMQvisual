@@ -1,14 +1,14 @@
 library(shiny)
 library(ggplot2)
 
-#(0) Creating the toy dataset
+#(0) Criando o dataset de exemplo
 set.seed(0)
 x <- seq(0,100,length.out = 30)
 y <- 0.5*x + runif(30,-25,25) + 25
 coef <- lm(y ~ x)$coef
 df <- as.data.frame(x = x, y = y)
 
-#(1) Creating the range of values of b0 and b1 to be chosen
+#(1) Criando o intervalo de valores de b0 e b1 a serem escolhidos
 b0s <- seq(0,50,1)
 b1s <- seq(-1,1,.1)
 (bs <- expand.grid(b0s, b1s))
