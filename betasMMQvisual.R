@@ -23,7 +23,7 @@ for (i in 1:nrow(bs)){
 ui <- fluidPage(
   theme = shinythemes::shinytheme('simplex'),
   withMathJax(),
-  titlePanel('Você consegue estimar visualmente os valores de \\(\\hat\\beta_0\\) and \\(\\hat\\beta_1\\)?'),
+  titlePanel('Você consegue estimar visualmente os valores de \\(\\hat\\beta_0\\) e \\(\\hat\\beta_1\\)?'),
 
   sidebarLayout(
     
